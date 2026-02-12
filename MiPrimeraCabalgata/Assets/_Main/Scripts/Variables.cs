@@ -16,8 +16,7 @@ public class Variables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-     
-        _saludo.text = "hola" + myName;
+        myName = _imputfield.text;
+        _saludo.text = "saludos" + myName;
     }
 }
