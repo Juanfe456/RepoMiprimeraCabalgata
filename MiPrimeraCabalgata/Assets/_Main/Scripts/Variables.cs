@@ -1,23 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro; 
 
 public class Variables : MonoBehaviour
 {
     //Declarar variables 
 
-    string myName = "Juan";
+    public string myName = "Juan";
+    public int _edad = 17;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("Hola" + myName);
-        
-    }
+    [SerializeField] private TMP_InputField _imputfield;
+    [SerializeField] private TMP_Text _saludo;
+  
+
 
     // Update is called once per frame
     void Update()
     {
-         Debug.Log("Hola" + myName); 
+        
+     
+        _saludo.text = "hola" + myName;
     }
 }
